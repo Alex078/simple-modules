@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Getting started with webpack and ES6 modules – the demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.2/css/intlTelInput.css">
+        <link rel="stylesheet" href="dist/style.css">
+    </head>
+    <body>
+        <main class="create-order">
+            <div class="create-order__box">
+                <h1 class="create-order__title">Залиште заявку</h1>
+
+                <label for="phone" class="create-order__label">Введіть номер свого телефону</label>
+                <input type="tel" id="phone" class="create-order__input" autocomplete="off">
+
+                <label for="email" class="create-order__label">Введіть свій email</label>
+                <input type="email" id="email" class="create-order__input js-create-order-email" placeholder="example@example.mail" autocomplete="off">
+
+                <label for="age" class="create-order__label">Введіть ваш вік (тільки цифри)</label>
+                <input type="text" id="age" class="create-order__input" placeholder="Ваш вік" autocomplete="off">
+
+                <label for="name" class="create-order__label">Введіть своє ім'я</label>
+                <input type="text" id="name" class="create-order__input" placeholder="Ваше ім'я" autocomplete="off">
+
+                <label for="description" class="create-order__label">Деталі звернення</label>
+                <textarea type="text" id="description" class="create-order__textarea" placeholder="Опишіть свою ситуацію" autocomplete="off"></textarea>
+
+                <button class="create-order__btn js-create-order-submit">Відправити запит</button>
+            </div>
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.2/js/intlTelInput.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/RobinHerbots/jquery.inputmask@5.0.0-beta.235/dist/inputmask.js"></script>
+        <script src="dist/bundle.js"></script>
+    </body>
+</html>
